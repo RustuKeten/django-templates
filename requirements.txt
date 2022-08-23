@@ -1,0 +1,15 @@
+asgiref==3.5.2
+Django==4.1
+sqlparse==0.4.2
+tzdata==2022.2
+
+#**  commands
+#?    1 python -m venv env
+#?    2 .env/Scripts/activate
+#?    3 env/Scripts/activate
+#?    4 pip install django
+#?    5 pip freeze
+#?    6 python.exe -m pip install --upgrade pip
+#?    7 pip freeze > requirements.txt
+#?    8 django-admin startproject prj .
+#?    9 python manage.py runserver

@@ -1,0 +1,16 @@
+{% load static %}
+ <link rel="stylesheet" href="{% static 'fsApp/index.css' %}">
+<h1>This is fsApp index page</h1>
+{{request.user}} <br/>
+{{caption | title}} <br/>
+{% for i in my_list %}
+<ul style="list-style-type: none">
+<li>
+{{ i }}
+</li>
+</ul>
+{% endfor %}
+{% load static %}
+<img src="{% static '../../../../frontend-notes/my_frontend_notes/html-css/project-solutions/card_hover_effect/davul_tokmak.png' %}" width="300" alt="django">
+{% comment %} #Django uygulamalarında geriye bir html sayfası döndürmek için render() metodunu kullanıyor olmalıyız.
+render() metodu ilk parametre olarak uygulamaya yapılan request nesnesini  parametre olarak alması gerekiyor. İkinci parametre olarak ise döndürülecek html sayfasının ismini alır. {% endcomment %}
